@@ -8,7 +8,5 @@ Si no posee el [Control de paquetes][package_control]  de [Sublime Text 2][subli
 
 [sublime]: http://www.sublimetext.com/
 [package_control]: http://wbond.net/sublime_packages/package_control
-[sublimeforum]:http://www.sublimetext.com/forum/viewtopic.php?f=4&p=26148
-[holy_linux]:http://www.holylinux.net/main/tools
 [jquerymobile]:http://jquerymobile.com
 [py]:http://www.python.org
