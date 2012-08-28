@@ -2,7 +2,7 @@ import sublime, sublime_plugin, os
 
 class PythonCommand(sublime_plugin.WindowCommand):
 	def run(self):
-		self.path=os.path.join(sublime.packages_path(), 'User')
+		self.path=os.path.join(sublime.packages_path(), 'ProjectWizard')
 		v = self.window.new_file()
 		v.settings().set('default_dir',self.path)
 		v.settings().set('default_extension', 'source.python')
