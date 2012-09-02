@@ -10,7 +10,7 @@ def leertpl(nombfich):
 class PythonCommand(sublime_plugin.WindowCommand):
 	"""Plugin para plantilla de Python"""
 	def run(self):
-		self.path=os.path.join(sublime.packages_path(), 'ProjectWizard')
+		self.path=os.path.join(sublime.packages_path(), 'User')
 		v = self.window.new_file()
 		v.settings().set('default_dir',self.path)
 		v.settings().set('default_extension', 'source.python')
@@ -25,7 +25,7 @@ class PythonCommand(sublime_plugin.WindowCommand):
 class PygtkCommand(sublime_plugin.WindowCommand):
 	"""Plugin para plantilla de PyGTK"""
 	def run(self):
-		self.path=os.path.join(sublime.packages_path(), 'ProjectWizard')
+		self.path=os.path.join(sublime.packages_path(), 'User')
 		v = self.window.new_file()
 		v.settings().set('default_dir',self.path)
 		v.settings().set('default_extension', 'source.python')
@@ -40,7 +40,7 @@ class PygtkCommand(sublime_plugin.WindowCommand):
 class HtmlCommand(sublime_plugin.WindowCommand):
 	"""Plugin para plantilla de HTML5"""
 	def run(self):
-		self.path=os.path.join(sublime.packages_path(), 'ProjectWizard')
+		self.path=os.path.join(sublime.packages_path(), 'User')
 		v = self.window.new_file()
 		v.settings().set('default_dir',self.path)
 		v.settings().set('default_extension', 'source.html')
@@ -55,7 +55,7 @@ class HtmlCommand(sublime_plugin.WindowCommand):
 class JqueryCommand(sublime_plugin.WindowCommand):
 	"""Plugin para plantilla de JQuery"""
 	def run(self):
-		self.path=os.path.join(sublime.packages_path(), 'ProjectWizard')
+		self.path=os.path.join(sublime.packages_path(), 'User')
 		v = self.window.new_file()
 		v.settings().set('default_dir',self.path)
 		v.settings().set('default_extension', 'source.js')
