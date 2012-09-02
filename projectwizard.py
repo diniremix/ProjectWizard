@@ -1,5 +1,7 @@
 import sublime, sublime_plugin, os
 
+prwpath='ProjectWizard/templates'
+
 def leertpl(nombfich):
 	"""print "leer archivo desde plantillas (prw)"""
 	prwfile=open(nombfich,"r")
@@ -10,7 +12,7 @@ def leertpl(nombfich):
 class PythonCommand(sublime_plugin.WindowCommand):
 	"""Plugin para plantilla de Python"""
 	def run(self):
-		self.path=os.path.join(sublime.packages_path(), 'User')
+		self.path=os.path.join(sublime.packages_path(), prwpath)
 		v = self.window.new_file()
 		v.settings().set('default_dir',self.path)
 		v.settings().set('default_extension', 'source.python')
@@ -25,7 +27,7 @@ class PythonCommand(sublime_plugin.WindowCommand):
 class PygtkCommand(sublime_plugin.WindowCommand):
 	"""Plugin para plantilla de PyGTK"""
 	def run(self):
-		self.path=os.path.join(sublime.packages_path(), 'User')
+		self.path=os.path.join(sublime.packages_path(), prwpath)
 		v = self.window.new_file()
 		v.settings().set('default_dir',self.path)
 		v.settings().set('default_extension', 'source.python')
@@ -40,7 +42,7 @@ class PygtkCommand(sublime_plugin.WindowCommand):
 class HtmlCommand(sublime_plugin.WindowCommand):
 	"""Plugin para plantilla de HTML5"""
 	def run(self):
-		self.path=os.path.join(sublime.packages_path(), 'User')
+		self.path=os.path.join(sublime.packages_path(), prwpath)
 		v = self.window.new_file()
 		v.settings().set('default_dir',self.path)
 		v.settings().set('default_extension', 'source.html')
@@ -52,10 +54,25 @@ class HtmlCommand(sublime_plugin.WindowCommand):
 		template=fich
 		v.run_command("insert_snippet", {"contents": template})
 
+class JquerymobileCommand(sublime_plugin.WindowCommand):
+	"""Plugin para plantilla de HTML5"""
+	def run(self):
+		self.path=os.path.join(sublime.packages_path(), prwpath)
+		v = self.window.new_file()
+		v.settings().set('default_dir',self.path)
+		v.settings().set('default_extension', 'source.html')
+		v.set_syntax_file('Packages/HTML/HTML.tmLanguage')
+		v.set_name('untitled.html')
+		
+		self.filename=os.path.join(self.path, 'jqm.prw')
+		fich=leertpl(self.filename)
+		template=fich
+		v.run_command("insert_snippet", {"contents": template})
+
 class JqueryCommand(sublime_plugin.WindowCommand):
 	"""Plugin para plantilla de JQuery"""
 	def run(self):
-		self.path=os.path.join(sublime.packages_path(), 'User')
+		self.path=os.path.join(sublime.packages_path(), prwpath)
 		v = self.window.new_file()
 		v.settings().set('default_dir',self.path)
 		v.settings().set('default_extension', 'source.js')
