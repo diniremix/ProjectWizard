@@ -4,7 +4,7 @@ Project Wizard Plugin permite crear un nuevo archivo basado en una plantilla par
 ### Instalacion (sin el Control de paquetes) ###
 Si no posee el [Control de paquetes][package_control]  de [Sublime Text 2][sublime] puede clonar este repositorio y agregarlo a su carpeta de paquetes instalados:
   
-    git clone git://github.com/diniremix/projectwizard.git
+    git clone git://github.com/diniremix/ProjectWizard.git
 
 [sublime]: http://www.sublimetext.com/
 [package_control]: http://wbond.net/sublime_packages/package_control

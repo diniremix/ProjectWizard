@@ -1,0 +1,64 @@
+[
+    {
+        "caption": "File",
+        "mnemonic": "F",
+        "id": "file",
+        "children":
+        [
+            { 
+                "caption": "New File from template", 
+                "mnemonic": "F",
+                "children":
+                [
+                    { "caption": "-" },
+                    {
+                        "caption": "Python",
+                        "mnemonic": "P",
+                        "children":
+                        [
+                            { "caption": "-" },
+                            {"caption": "Python file","command": "python"},
+                            {"caption": "PyGTK file","command": "pygtk"},
+                            { "caption": "-" }
+                        ]
+
+                    },
+                    {
+                        "caption": "JQuery Mobile",
+                        "mnemonic": "J",
+                        "children":
+                        [
+                            { "caption": "-" },
+                            {"caption": "JQuery Mobile file","command": "jquerymobile"},
+                            { "caption": "-" }
+                        ]
+
+                    },
+                    {
+                        "caption": "HTML",
+                        "mnemonic": "H",
+                        "children":
+                        [
+                            { "caption": "-" },
+                            {"caption": "HTML file","command": "html"},
+                            { "caption": "-" }
+                        ]
+
+                    },
+                    {
+                        "caption": "JQuery",
+                        "mnemonic": "Q",
+                        "children":
+                        [
+                            { "caption": "-" },
+                            {"caption": "JQuery file","command": "jquery"},
+                            { "caption": "-" }
+                        ]
+
+                    },
+                    { "caption": "-" }
+                ]
+            }
+        ]
+    }
+]
